@@ -1,7 +1,7 @@
 from selene import browser, have
 
 
-def test_login_school_true(open_browser):
+def test_login_school_true(open_login_page):
     # Ввод логина и пароля
     browser.element('[type=text]').type('43@mail.ru')
     browser.element('[type=password]').type('testGYvbueca0lf6')
