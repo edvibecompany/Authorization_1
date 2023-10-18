@@ -1,7 +1,7 @@
 from selene import browser, have, be
 
 
-def test_invalid_email(open_login_page):
+def test_invalid_password(open_login_page):
     # Ввод логина и пароля
     browser.element('[type=text]').type('43@mail.ru')
     browser.element('[type=password]').type('password*123!')
